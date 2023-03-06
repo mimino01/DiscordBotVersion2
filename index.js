@@ -1,4 +1,4 @@
-const {Client, GatewayIntentBits} = require('discord.js');
+const {Client, GatewayIntentBits, TOKEN} = require('discord.js');
 
 const client = new Client({
     intents: [
@@ -164,4 +164,4 @@ client.on('messageCreate', message => {
     }
 });
 
-client.login('MTA4MDA3NDI5MzExMjczMzY5Nw.Gurma9.gArZYW_DLN0H29d-nDugA9lqThnU4usSc15CPM');
+client.login(TOKEN);
