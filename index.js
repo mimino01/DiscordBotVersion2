@@ -12,6 +12,8 @@ const client = new Client({
     ],
 });
 
+console.log(secretKey);
+
 client.on('ready', () => {
     console.log(`Logged in as ${client.user.tag}!`);
 });
