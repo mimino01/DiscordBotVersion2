@@ -1,4 +1,5 @@
 const {Client, GatewayIntentBits} = require('discord.js');
+<<<<<<< HEAD
 // const CloudType = require('cloudtype');
 // const secretEnvName = "secret_token";
 // const secretKey = process.env[secretEnvName];
@@ -6,6 +7,12 @@ const {Client, GatewayIntentBits} = require('discord.js');
 //     throw new Error(`Secret key '${secretEnvName}' not found in environment variables`);
 // }
 // const token = new CloudType(secretKey);
+=======
+const CloudType = require('cloudtype');
+const secretEnvName = "TOKEN";
+const secretKey = process.env[secretEnvName];
+const token = new CloudType(secretKey);
+>>>>>>> parent of e52aa40 (패치)
 const client = new Client({
     intents: [
         GatewayIntentBits.Guilds,
@@ -14,6 +21,8 @@ const client = new Client({
         GatewayIntentBits.GuildMembers,
     ],
 });
+
+console.log(secretKey);
 
 client.on('ready', () => {
     console.log(`Logged in as ${client.user.tag}!`);
