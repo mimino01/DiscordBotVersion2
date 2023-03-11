@@ -1,11 +1,5 @@
 const {Client, GatewayIntentBits} = require('discord.js');
-const CloudType = require('cloudtype');
-const secretEnvName = "secret_token";
-const secretKey = process.env[secretEnvName];
-if (!secretKey) {
-    throw new Error(`Secret key '${secretEnvName}' not found in environment variables`);
-}
-const token = new CloudType(secretKey);
+const token = "";
 const client = new Client({
     intents: [
         GatewayIntentBits.Guilds,
