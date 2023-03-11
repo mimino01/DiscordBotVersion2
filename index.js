@@ -1,6 +1,8 @@
 const {Client, GatewayIntentBits} = require('discord.js');
 const CloudType = require('cloudtype');
-const token = CloudType(`TOKEN`);
+const secretEnvName = "TOKEN";
+const secretKey = process.env[secretEnvName];
+const token = new CloudType(secretKey);
 const client = new Client({
     intents: [
         GatewayIntentBits.Guilds,
