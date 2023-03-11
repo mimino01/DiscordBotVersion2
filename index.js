@@ -9,9 +9,6 @@ const client = new Client({
         GatewayIntentBits.GuildMembers,
     ],
 });
-
-console.log(secretKey);
-
 client.on('ready', () => {
     console.log(`Logged in as ${client.user.tag}!`);
 });
