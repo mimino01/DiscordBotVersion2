@@ -1,5 +1,6 @@
 const {Client, GatewayIntentBits} = require('discord.js');
-const TOKEN = ``;
+const CloudType = require('cloudtype');
+const token = CloudType(TOKEN);
 const client = new Client({
     intents: [
         GatewayIntentBits.Guilds,
@@ -85,4 +86,4 @@ client.on('messageCreate', message => {
     }
 });
 
-client.login(TOKEN);
+client.login(token);
