@@ -2,6 +2,9 @@ const {Client, GatewayIntentBits} = require('discord.js');
 const CloudType = require('cloudtype');
 const secretEnvName = "TOKEN";
 const secretKey = process.env[secretEnvName];
+if (!secretKey) {
+    throw new Error(`Secret key '${secretEnvName}' not found in environment variables`);
+}
 const token = new CloudType(secretKey);
 const client = new Client({
     intents: [
@@ -11,8 +14,6 @@ const client = new Client({
         GatewayIntentBits.GuildMembers,
     ],
 });
-
-console.log(secretKey);
 
 client.on('ready', () => {
     console.log(`Logged in as ${client.user.tag}!`);
