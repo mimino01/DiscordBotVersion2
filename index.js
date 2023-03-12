@@ -85,7 +85,7 @@ client.on('messageCreate', message => {
         sendReact(message, `볼다이크 하드`);
     } else if (message.content.startsWith(`/경매 `)) {
         const price = message.content.replace(`/경매 `, ``);
-        msg.reply(`4인기준: ${price * 0.649}\n` + `8인기준: ${price * 0.757}`)
+        message.reply(`4인기준: ${price * 0.649}\n` + `8인기준: ${price * 0.757}`);
     }
 });
 
