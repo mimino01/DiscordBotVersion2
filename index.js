@@ -30,7 +30,6 @@ function sendReactNE(message, description) {
 client.on('messageCreate', message => {
     // 명령어가 시작될 때 실행됩니다.
     if (message.content.startsWith('/핫산일해')) {
-        console.log(process.env);
 
         sendReactNE(message, '```markdown' +
             '- 참여를 희망하시는 레이드에 이모티콘을 클릭하여 반응을 남겨주시면 됩니다.\n' +
@@ -84,6 +83,9 @@ client.on('messageCreate', message => {
         sendReactNE(message, `─────볼다이크──────`);
         sendReact(message, `볼다이크 노말`);
         sendReact(message, `볼다이크 하드`);
+    } else if (message.content.startsWith(`/경매 `)) {
+        const price = message.content.replace(`/경매 `, ``);
+        msg.reply(`4인기준: ${price * 0.649}\n` + `8인기준: ${price * 0.757}`)
     }
 });
 
