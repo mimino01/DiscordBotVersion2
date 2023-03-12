@@ -84,8 +84,9 @@ client.on('messageCreate', message => {
         sendReact(message, `볼다이크 노말`);
         sendReact(message, `볼다이크 하드`);
     } else if (message.content.startsWith(`/경매 `)) {
+        console.log(`경매 명령어 입력받음`);
         const price = message.content.replace(`/경매 `, ``);
-        message.reply(`4인기준: ${price * 0.649}\n` + `8인기준: ${price * 0.757}`);
+        message.reply(`경매 입찰가 기준 최솟값 (즉시입찰가가 손익분기점을 넘는 최솟값)\n` + `4인기준: ${price * 0.649}\n` + `8인기준: ${price * 0.757}`);
     }
 });
 
