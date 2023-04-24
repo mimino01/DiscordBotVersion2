@@ -66,7 +66,10 @@ client.on('messageCreate', message => {
         sendReact(message, `클리어 이후 길드 토벌 <쿠크루삐뽀>`);
         sendReactNE(message, `─────주간길드팟─────`);
         sendReact(message, `수요일 오후 7시 레이드 털기`);
-        sendReactNE(message, '```길드팟 출발전 쿠크세이튼, 아브렐슈드 등등 간단간단하게 레이드 터실분 구합니다. ```')
+        sendReactNE(message, '```길드팟 출발전 쿠크세이튼, 아브렐슈드 등등 간단간단하게 레이드 터실분 구합니다. ```');
+        sendReactNE(message, `─────쿠크세이튼─────`);
+        sendReact(message, `쿠크세이튼 노말 1-3관문`);
+        sendReactNE(message, '```채원님하고 노말터실분 구합니다!```');
         sendReactNE(message, `─────아브렐슈드─────`);
         sendReact(message, `아브렐슈드 노말 1-4관문`);
         sendReact(message, `아브렐슈드 노말 5-6관문`);
