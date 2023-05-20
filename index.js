@@ -1,6 +1,7 @@
 const {Client, GatewayIntentBits} = require('discord.js');
 const token = process.env.TOKEN;
 console.log(token);
+const desctiption = require(`./desciption.js`);
 const client = new Client({
     intents: [
         GatewayIntentBits.Guilds,
@@ -30,6 +31,13 @@ function sendReactNE(message, description) {
 client.on('messageCreate', message => {
     // 명령어가 시작될 때 실행됩니다.
     if (message.content.startsWith('/핫산일해')) {
+
+        console.log("commend in");
+        for (let i = 0; desctiption[i]; i++) {
+            console.log(desctiption[i]);
+        }
+
+        /*
 
         sendReactNE(message, '```markdown' +
             '- 참여를 희망하시는 레이드에 이모티콘을 클릭하여 반응을 남겨주시면 됩니다.\n' +
@@ -86,6 +94,8 @@ client.on('messageCreate', message => {
         sendReactNE(message, `─────볼다이크──────`);
         sendReact(message, `볼다이크 노말`);
         sendReact(message, `볼다이크 하드`);
+
+        */
     } else if (message.content.startsWith(`/경매 `)) {
         console.log(`경매 명령어 입력받음`);
         const price = message.content.replace(`/경매 `, ``);
@@ -93,5 +103,6 @@ client.on('messageCreate', message => {
     }
 });
 
-client.login(token);
+client.login(`MTA4MDA3NDI5MzExMjczMzY5Nw.G66BpR.LwVKaDtFzEDfCe-Kve7oEskvwq--G1WyQeGWmw`);
+// client.login(token);
 
