@@ -1,7 +1,7 @@
 const {Client, GatewayIntentBits} = require('discord.js');
 const token = process.env.TOKEN;
 console.log(token);
-const desctiption = require(`./desciption.js`);
+// const desctiption = require(`./desciption.js`);
 const client = new Client({
     intents: [
         GatewayIntentBits.Guilds,
@@ -101,6 +101,5 @@ client.on('messageCreate', message => {
     }
 });
 
-client.login(`MTA4MDA3NDI5MzExMjczMzY5Nw.G66BpR.LwVKaDtFzEDfCe-Kve7oEskvwq--G1WyQeGWmw`);
-// client.login(token);
+client.login(token);
 
