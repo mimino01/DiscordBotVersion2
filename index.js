@@ -32,12 +32,12 @@ client.on('messageCreate', message => {
     // 명령어가 시작될 때 실행됩니다.
     if (message.content.startsWith('/핫산일해')) {
 
-        console.log("commend in");
-        for (let i = 0; desctiption[i]; i++) {
-            console.log(desctiption[i]);
-        }
+        // console.log("commend in");
+        // for (let i = 0; desctiption[i]; i++) {
+        //     console.log(desctiption[i]);
+        // }
 
-        /*
+
 
         sendReactNE(message, '```markdown' +
             '- 참여를 희망하시는 레이드에 이모티콘을 클릭하여 반응을 남겨주시면 됩니다.\n' +
@@ -77,7 +77,7 @@ client.on('messageCreate', message => {
         sendReactNE(message, '```길드팟 출발전 쿠크세이튼, 아브렐슈드 등등 간단간단하게 레이드 터실분 구합니다. ```');
         sendReactNE(message, `─────쿠크세이튼─────`);
         sendReact(message, `쿠크세이튼 노말 1-3관문`);
-        sendReactNE(message, '```채원님하고 노말터실분 구합니다!```');
+        sendReactNE(message, '```채원님하고 노말터실분 구합니다! 보통 주말에 출발해요!```');
         sendReactNE(message, `─────아브렐슈드─────`);
         sendReact(message, `아브렐슈드 노말 1-4관문`);
         sendReact(message, `아브렐슈드 노말 5-6관문`);
@@ -88,14 +88,12 @@ client.on('messageCreate', message => {
         sendReact(message, `곰곰이랑 에피데믹 가실분`);
         sendReactNE(message, `──────카양겔──────`);
         sendReact(message, `카양겔 노말`);
-        sendReact(message, `카양겔 하드1`);
-        sendReact(message, `카양겔 하드2`);
-        sendReact(message, `카양겔 하드3`);
+        sendReact(message, `카양겔 하드`);
         sendReactNE(message, `─────볼다이크──────`);
         sendReact(message, `볼다이크 노말`);
         sendReact(message, `볼다이크 하드`);
 
-        */
+
     } else if (message.content.startsWith(`/경매 `)) {
         console.log(`경매 명령어 입력받음`);
         const price = message.content.replace(`/경매 `, ``);
