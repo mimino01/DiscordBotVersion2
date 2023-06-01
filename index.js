@@ -1,7 +1,7 @@
 const {Client, GatewayIntentBits} = require('discord.js');
 const token = process.env.TOKEN;
 console.log(token);
-// const desctiption = require(`./desciption.js`);
+const desc = require(`./description.js`);
 const client = new Client({
     intents: [
         GatewayIntentBits.Guilds,
@@ -32,12 +32,10 @@ client.on('messageCreate', message => {
     // 명령어가 시작될 때 실행됩니다.
     if (message.content.startsWith('/핫산일해')) {
 
-        // console.log("commend in");
+        console.log("commend in");
         // for (let i = 0; desctiption[i]; i++) {
         //     console.log(desctiption[i]);
         // }
-
-
 
         sendReactNE(message, '```markdown' +
             '- 참여를 희망하시는 레이드에 이모티콘을 클릭하여 반응을 남겨주시면 됩니다.\n' +
@@ -85,7 +83,7 @@ client.on('messageCreate', message => {
         sendReact(message, `아브렐슈드 하드 1-4관문`);
         sendReact(message, `아브렐슈드 하드 5-6관문`);
         sendReactNE(message, `─────일리아칸──────`);
-        sendReact(message, `곰곰이랑 에피데믹 가실분`);
+        sendReact(message, `일리아칸 노말`);
         sendReactNE(message, `──────카양겔──────`);
         sendReact(message, `카양겔 노말`);
         sendReact(message, `카양겔 하드`);
