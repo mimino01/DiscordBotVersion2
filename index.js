@@ -13,7 +13,7 @@ client.on('ready', () => {
     console.log(`Logged in as ${client.user.tag}!`);
 });
 
-client.login("MTA4MDA3NDI5MzExMjczMzY5Nw.GWJeWb.F0zjowDFUx6pK7Bd_lUeuSXE3ifEdZgTG1Ye50");
+client.login(token);
 /*
 function sendReact(message, description) {
     message.channel.send(description)
