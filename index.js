@@ -14,34 +14,6 @@ function sendReact(message, description) {
     message.channel.send(description)
         .then(sentMessage => {
             // 이모지 추가
-            sentMessage.react(':loacon_9:1066522635070087248');
-        })
-        .catch(console.error);
-}
-
-function sendReactNE(message, description) {
-    message.channel.send(description)
-}
-
-client.on('ready', () => {
-    console.log(`Logged in as ${client.user.tag}!`);
-});
-
-client.on(`messageCreate`, message => {
-    if (message.content.startsWith(`/핫산일해`)) {
-        console.log(`핫산 명령어 입력받음`);
-
-        sendReact(message, `이게 맞나?`);
-        sendReactNE(message, `응 맞아 ㅅㄱ`);
-    }
-});
-
-client.login(token);
-/*
-function sendReact(message, description) {
-    message.channel.send(description)
-        .then(sentMessage => {
-            // 이모지 추가
             sentMessage.react(':23:1066522635070087248');
         })
         .catch(console.error);
@@ -124,4 +96,4 @@ client.on('messageCreate', message => {
 });
 
 client.login(token);
-*/
+
