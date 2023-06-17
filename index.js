@@ -14,7 +14,7 @@ function sendReact(message, description) {
     message.channel.send(description)
         .then(sentMessage => {
             // 이모지 추가
-            sentMessage.react(':23:1066522635070087248');
+            sentMessage.react(':loacon_9:1066522635070087248');
         })
         .catch(console.error);
 }
