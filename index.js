@@ -14,7 +14,7 @@ function sendReact(message, description) {
     message.channel.send(description)
         .then(sentMessage => {
             // 이모지 추가
-            sentMessage.react(':23:1066522635070087248');
+            sentMessage.react(':Loacon_mokoko_11:1119823140470665256');
         })
         .catch(console.error);
 }
@@ -95,5 +95,5 @@ client.on('messageCreate', message => {
     }
 });
 
-client.login(token);
+client.login("MTA4MDA3NDI5MzExMjczMzY5Nw.GEcV6_.8iLL1HkJMkY-Y1FmlAHZFuCIaRF8PtXHTpEO2E");
 
