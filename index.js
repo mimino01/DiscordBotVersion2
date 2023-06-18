@@ -14,7 +14,7 @@ function sendReact(message, description) {
     message.channel.send(description)
         .then(sentMessage => {
             // 이모지 추가
-            sentMessage.react(':Loacon_mokoko_11:1119823140470665256');
+            sentMessage.react(':de:1119823114247880745');
         })
         .catch(console.error);
 }
