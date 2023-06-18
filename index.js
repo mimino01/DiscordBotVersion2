@@ -95,5 +95,5 @@ client.on('messageCreate', message => {
     }
 });
 
-client.login("MTA4MDA3NDI5MzExMjczMzY5Nw.GEcV6_.8iLL1HkJMkY-Y1FmlAHZFuCIaRF8PtXHTpEO2E");
+client.login(token);
 
