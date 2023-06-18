@@ -33,7 +33,7 @@ client.on('messageCreate', message => {
         //     console.log(desctiption[i]);
         // }
 
-        sendReactNE(message, '```markdown' +
+        sendReactNE(message, '```markdown\n' +
             '- 참여를 희망하시는 레이드에 이모티콘을 클릭하여 반응을 남겨주시면 됩니다.\n' +
             '\n' +
             '- 사전 말씀 없이 지각하실 경우 나머지 인원끼리 시작합니다. \n' +
